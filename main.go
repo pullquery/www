@@ -14,6 +14,6 @@ func main() {
 	http.HandleFunc("/article/", HandleArticle)
 	http.HandleFunc("/media/", HandleMedia)
 
-	fmt.Println("Start listening on :8080")
+	fmt.Println("Start listening on port 8080")
 	http.ListenAndServe(":8080", nil)
 }
