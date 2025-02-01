@@ -21,6 +21,8 @@ func HandleTemplate(res http.ResponseWriter, req *http.Request) {
 			http.StatusText(http.StatusNotFound),
 			http.StatusNotFound,
 		)
+
+		return
 	}
 
 	res.Write(article)
